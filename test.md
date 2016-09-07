@@ -11,6 +11,8 @@ parallax_bleed: 10
 parallax_android_fix: true
 parallax_ios_fix: true
 parallax_z_index: -99
+parallax_style: "height: 700px;"
+
 ---
 
 # Test

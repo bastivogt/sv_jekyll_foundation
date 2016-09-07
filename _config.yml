@@ -27,5 +27,7 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
+# exclude: [assets/foundation/.sass-cache]
+
 ## custom
 # parallax

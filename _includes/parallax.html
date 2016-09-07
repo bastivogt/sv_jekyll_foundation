@@ -1,4 +1,4 @@
-<div class="parallax-window" style="min-height: 600px;" data-parallax="scroll" data-image-src="{{ site.url }}{{ page.parallax_image }}"
+<div class="parallax-window"{% if page.parallax_style %} style="{{ page.parallax_style }}"{% else %} style="min-height: 400px;"{% endif %}data-parallax="scroll" data-image-src="{{ site.url }}{{ page.parallax_image }}"
 {% if page.parallax_position_x %} data-position-x="{{ page.parallax_position_x }}"{% endif %}
 {% if page.parallax_position_y %} data-position-y="{{ page.parallax_position_y }}"{% endif %}
 {% if page.parallax_speed %} data-speed="{{ page.parallax_speed }}"{% endif %}
@@ -6,4 +6,12 @@
 {% if page.parallax_z_index %} data-z-index="{{ page.parallax_z_index }}"{% endif %}
 {% if page.parallax_ios_fix %} data-ios-fix="{{ page.parallax_ios_fix}}"{% endif %}
 {% if page.parallax_android_fix %} data-android-fix="{{ page.parallax_android_fix}}"{% endif %}
-></div>
+>
+{% if page.parallax_content %}
+<div class=row>
+  <div class="medium-12 columns">
+    <div class="parallax-content">{{ page.parallax_content }}</div>
+  </div>
+</div>
+{% endif %}
+</div>

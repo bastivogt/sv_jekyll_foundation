@@ -1,0 +1,45 @@
+@import "foundation";
+
+// anchor
+a, button, input[type="submit"] {
+  text-decoration: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+}
+
+a {
+  @include transition(all, 300ms, ease);
+}
+
+
+// selection
+::selection {
+  background: $primary-color;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $primary-color;
+  color: #fff;
+}
+
+// grid
+.column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
+  float: left;
+}
+
+// modal
+.reveal-modal {
+  @media #{$small-only} {
+    min-height: 10px;
+  }
+}
+
+
+
+

@@ -1,0 +1,153 @@
+@import "foundation";
+@import "compass/css3/transform";
+/**
+* allgemein
+*/
+.invisible {
+  display: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: block;
+    overflow: hidden;
+
+    img {
+      @include transition(all, 300ms, ease);
+      @include scale(1.0);
+      &:active {
+        @include transition(all, 300ms, ease);
+        @include scale(1.3);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      img {
+        @include scale(1.3);
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+/**
+* Form
+*/
+input[type="submit"] {
+  @include button($button-sml);
+  font-size: 0.88889rem;
+}
+button {
+  font-size: 0.88889rem;
+}
+
+form {
+  span.mandatory {
+    color: $alert-color;
+  }
+  span.captcha_text {
+    display: block;
+    margin: 0 0 0.88889rem;
+  }
+}
+
+
+/**
+* table
+*/
+.table-responsive {
+  overflow-x: auto;
+  table {
+    width: 100%;
+  }
+}
+
+/**
+* ce player
+*/
+.mejs-container .mejs-controls > div:last-of-type {
+  position: relative;
+  clear: both;
+  float: right;
+  //top:   -31px;
+  top: -26px;
+}
+
+/**
+* ce gallery
+*/
+.ce_gallery {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .column, .columns {
+    padding: 1px;
+  }
+}
+
+/**
+* ce_accordion
+*/
+.ce_accordion {
+  .button.toggler {
+    margin-bottom: 0.111rem;
+  }
+}
+
+/**
+* news
+*/
+p.more, p.back {
+  a {
+    @include button();
+  }
+}
+
+p.back {
+  padding-top: 20px;
+}
+
+.mod_newsmenu {
+  ul {
+    padding: 0;
+    li {
+      margin: 0;
+    }
+  }
+  ul.level_2 {
+    li {
+      a {
+        padding-left: 30px;
+      }
+    }
+
+  }
+}
+
+/**
+* comments
+*/
+form span.captcha_text {
+  display: inline;
+}
+
+
+
+
+
+

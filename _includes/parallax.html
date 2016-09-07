@@ -1,1 +1,9 @@
-<div class="parallax-window" data-parallax="scroll" data-image-src="{{ site.url }}{{ page.parallax_image }}" style="min-height: 600px;"></div>
+<div class="parallax-window" style="min-height: 600px;" data-parallax="scroll" data-image-src="{{ site.url }}{{ page.parallax_image }}"
+{% if page.parallax_position_x %} data-position-x="{{ page.parallax_position_x }}"{% endif %}
+{% if page.parallax_position_y %} data-position-y="{{ page.parallax_position_y }}"{% endif %}
+{% if page.parallax_speed %} data-speed="{{ page.parallax_speed }}"{% endif %}
+{% if page.parallax_bleed %} data-bleed="{{ page.parallax_bleed }}"{% endif %}
+{% if page.parallax_z_index %} data-z-index="{{ page.parallax_z_index }}"{% endif %}
+{% if page.parallax_ios_fix %} data-ios-fix="{{ page.parallax_ios_fix}}"{% endif %}
+{% if page.parallax_android_fix %} data-android-fix="{{ page.parallax_android_fix}}"{% endif %}
+></div>

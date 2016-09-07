@@ -4,6 +4,13 @@ title: Test
 permalink: /test
 topbar_pos: left
 parallax_image: images/parallax/Image021.jpg
+parallax_position_x: top
+parallax_position_y: top
+parallax_speed: 0
+parallax_bleed: 10
+parallax_android_fix: true
+parallax_ios_fix: true
+parallax_z_index: -99
 ---
 
 # Test

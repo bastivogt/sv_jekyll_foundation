@@ -1,4 +1,4 @@
-<header>
+<header id="header">
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
@@ -22,7 +22,7 @@
       <ul class="left">
         {% for page in site.pages %}
           {% if page.title and page.topbar_pos == "left" %}
-            <li><a href="{{ page.url | prepend: site.url }}">{{ page.title }}</a></li>
+            <li><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>

@@ -43,3 +43,19 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+.parallax-content {
+  text-align: center;
+}
+
+#main {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: $jet;
+}

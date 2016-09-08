@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html class="no-js">
   {% include head.html %}
-  <body>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
 
     {% include header.html %}
 
     {% if page.parallax_image %}
       {% include parallax.html %}
     {% endif %}
-
-    <main>
+    <main id="main">
       <div class="row">
         <div class="medium-12 columns">
-          {{ content }}
+          {% include page_content.html %}
         </div>
       </div>
     </main>
-
     {% include footer.html %}
 
     {% include js.html %}

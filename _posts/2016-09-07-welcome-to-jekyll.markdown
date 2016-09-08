@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-09-07 12:09:08 +0200
 categories: jekyll update
+teaser: "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes."
 
 parallax_image: images/parallax/Image010.jpg
 

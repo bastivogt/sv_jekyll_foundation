@@ -4,6 +4,14 @@ parallax_image: images/parallax/Image009.jpg
 ---
 
 
+<ul>
+  {% assign pages = site.pages | sort: "weight" %}
+  {% for p in pages %}
+    <li>{{ p.title }} = {{ p.weight }}</li>
+  {% endfor %}
+</ul>
+
+
   <h1 class="page-heading">Posts</h1>
 
 
